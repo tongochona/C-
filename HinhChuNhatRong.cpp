@@ -1,23 +1,24 @@
 #include <iostream>
 
 using namespace std;
-
+//vx hình chữ nhật rỗng
 int main(){
-  int a, b, i, j, k;
-  cout <<"nhap a, b: ";
-  cin >>a>>b;
-  for(int i=1; i<=a; i++){cout<<"*";
+  int chieudai, chieurong;
+  cout <<"nhap chieudai, chieurong: ";
+  cin >>chieudai>>chieurong;
+  for(int i=0; i<chieudai; i++){cout<<"*";
 }
 cout <<endl;
-for (int j=2; j<=(b-1); j++){
-  for (int j=1 ;j<=a; j++){
-    if(j>=2&&j<a)
+for (int j=0; j<(chieurong-2); j++){
+  cout<<"*";//vẽ viền
+
+  for (int j=0 ;j<chieudai-2; j++){
     cout<<" ";
-    else cout<<"*";
   }
+  cout<<"*";//vẽ viền
   cout<<endl;
 }
-for(int k=1; k<=a; k++){
+for(int k=0; k<chieudai; k++){
   cout <<"*";
 }
 return 0;
