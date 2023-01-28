@@ -1,3 +1,4 @@
+// Bài tập nhập vào dãy số có chữ số cuối cùng là số 0 và cho biết số lớn nhất, bé nhất khác 0, số số hạng.
 #include <iostream>
 using namespace std;
 int main(){
