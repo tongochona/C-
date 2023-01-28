@@ -1,21 +1,17 @@
 #include <iostream>
 
 using namespace std;
-
+//Nhập vào số giây quy đổi thành ngày, giờ, phút, giây
 int main(){
-int sogiay, s, m, h, a;
+int sogiay, second, minute, hour, day;
 cout <<"nhap so giay: ";
 cin >>sogiay;
-h=sogiay/3600 ;
+hour=sogiay/3600 ;
 sogiay=sogiay%3600;
-m=sogiay/60;
-s=sogiay%60;
-if (h<10) cout <<0<<h;
-else cout <<h;
-cout <<":";
-if (m<10) cout <<0<<m;
-else cout<< m;
-cout<<":";
-cout<<s;
+minute=sogiay/60;
+second=sogiay%60;
+day=hour/24;
+hour=hour%24;
+cout<<day<<"d"<<":"<<hour<<"h"<<":"<<minute<<"m"<<":"<<second<<"s"<<endl;
   return 0;
 }
