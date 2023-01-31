@@ -1,32 +1,19 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-
+//nhap vào 1 số nguyên dương, in số đảo ngược
 int main(){
   unsigned long a;
-  int i, j, z, x;
+  int z;
   cin>>a;
-//  for (int i=9; i>0; i-=1){
-//    x=a/pow(10,i);
-//    if (x!=0) break;
-//  }
-//  for (int j=1; j<=i; j+=1){
-//    z=a%10;
-//    a=a/10;
-//    cout<<z;
-// }
-  i=9,j=1;
-  //cái này làm gì?
-  while (i>0){
-    x=a/pow(10,i);
-    if (x!=0) break;
-    i-=1;
-  }
-  while(j<=(i+1)){
+  if(a<0) {
+    cout<<"vui long nhap so nguyen duong!";
+    return -1;
+    }
+  while(a!=0){
     z=a%10;
-     a=a/10;
-      cout<<z;
-      j+=1;
+    a=a/10;
+    cout<<z;
   }
   return 0;
 }
