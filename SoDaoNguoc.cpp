@@ -16,6 +16,7 @@ int main(){
 //    cout<<z;
 // }
   i=9,j=1;
+  //cái này làm gì?
   while (i>0){
     x=a/pow(10,i);
     if (x!=0) break;
